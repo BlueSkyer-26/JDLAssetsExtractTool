@@ -24,12 +24,12 @@
     
     self.label.stringValue = DedaultStr;
 
-    CustomView *v = [[CustomView alloc] initWithFrame:NSMakeRect(0, 80, self.view.bounds.size.width, self.view.bounds.size.height-80)];
-    v.wantsLayer = YES;
-    v.delegate = self;
-    v.layer.backgroundColor = [[NSColor grayColor] CGColor];
-    v.alphaValue = 0.6;
-    [self.view addSubview:v];
+    CustomView *vc = [[CustomView alloc] initWithFrame:NSMakeRect(0, 80, self.view.bounds.size.width, self.view.bounds.size.height-80)];
+    vc.wantsLayer = YES;
+    vc.delegate = self;
+    vc.layer.backgroundColor = [[NSColor grayColor] CGColor];
+    vc.alphaValue = 0.6;
+    [self.view addSubview:vc];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
